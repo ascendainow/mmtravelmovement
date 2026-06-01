@@ -210,3 +210,6 @@ ul{list-style:none}
     .destinations-grid{grid-template-columns:1fr 1fr}
     .strip-container{grid-template-columns:repeat(2,1fr)}
 }
+
+/* Hide placeholder when hero photo is loaded */
+.hero-photo-placeholder{display:none}
