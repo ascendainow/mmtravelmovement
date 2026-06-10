@@ -1,194 +1,120 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - MM Travel Movement</title>
-    <meta name="description" content="Contact Melody Michaux to start planning your dream trip. Book a free consultation today." />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <nav class="navbar scrolled" id="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="nav-logo">
-          <span class="logo-mm">MM</span>
-          <span class="logo-text">Travel Movement</span>
-        </a>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Melody</a></li>
-          <li><a href="services.html" class="nav-link">Travel Services</a></li>
-          <li><a href="group-travel.html" class="nav-link">Group Travel</a></li>
-          <li><a href="cruises.html" class="nav-link">Cruises</a></li>
-          <li><a href="trips.html" class="nav-link">Upcoming Trips</a></li>
-          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-          <li><a href="payments.html" class="nav-link">Payments</a></li>
-          <li><a href="resources.html" class="nav-link">Travel Resources</a></li>
-          <li><a href="contact.html" class="nav-link active">Contact</a></li>
-          <li><a href="contact.html" class="nav-cta">Book Consultation</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <section class="page-hero">
-      <div class="container">
-        <p class="section-label">Get In Touch</p>
-      <h1>Let&apos;s Start Planning</h1>
-      <p>Fill out the form below and Melody will be in touch within 24 hours to discuss your dream trip.</p>
-      </div>
-    </section>
-
-    <section class="section-padding">
-      <div class="container contact-grid">
-        <div>
-          <h3>Send A Travel Inquiry</h3>
-          <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="margin-top:24px;">
-            <input type="hidden" name="form-name" value="contact" />
-            <p style="display:none;"><label>Don&apos;t fill this out: <input name="bot-field" /></label></p>
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="firstName">First Name *</label>
-                <input type="text" id="firstName" name="firstName" required />
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name *</label>
-                <input type="text" id="lastName" name="lastName" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone *</label>
-                <input type="tel" id="phone" name="phone" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="destination">Destination</label>
-                <input type="text" id="destination" name="destination" placeholder="Where do you want to go?" />
-              </div>
-              <div class="form-group">
-                <label for="travelDates">Travel Dates</label>
-                <input type="text" id="travelDates" name="travelDates" placeholder="e.g., July 2025" />
-              </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Melody Michaux - MM Travel Movement. Start planning your dream trip today." />
+  <title>Contact - MM Travel Movement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/inner-pages.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="/"><span class="logo-badge"><span class="logo-mm">MM</span><span class="logo-tm">TM</span></span><div class="logo-text-block"><span class="logo-title">Michaux Melodic Travel Movement</span><span class="logo-tagline">Harmoniously Booking Lifetime Memories</span></div></a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-link" href="/">Home</a></li>
+        <li><a class="nav-link" href="/about">About Melody</a></li>
+        <li><a class="nav-link" href="/services">Services</a></li>
+        <li><a class="nav-link" href="/trips">Upcoming Trips</a></li>
+        <li><a class="nav-link" href="/testimonials">Testimonials</a></li>
+        <li><a class="nav-link" href="/payments">Payments</a></li>
+        <li><a class="nav-link active" href="/contact">Contact</a></li>
+        <li><a class="nav-cta" href="/contact"><i class="fas fa-calendar-alt"></i> Book a Consultation</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-eyebrow">Get In Touch</span>
+      <h1>Let's Start Planning</h1>
+      <p class="hero-sub">Fill out the form below and Melody will be in touch within 24 hours to discuss your dream trip.</p>
+    </div>
+  </section>
+  <section class="section-block bg-off-white">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-form-card">
+          <h3>Send a Travel Inquiry</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="firstName">First Name *</label><input type="text" id="firstName" placeholder="First name" required /></div>
+              <div class="form-group"><label for="lastName">Last Name *</label><input type="text" id="lastName" placeholder="Last name" required /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" placeholder="(555) 000-0000" required /></div>
+              <div class="form-group"><label for="email">Email *</label><input type="email" id="email" placeholder="your@email.com" required /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label for="destination">Destination</label><input type="text" id="destination" placeholder="Where do you want to go?" /></div>
+              <div class="form-group"><label for="travelDates">Travel Dates</label><input type="text" id="travelDates" placeholder="Approximate dates" /></div>
+            </div>
+            <div class="form-row">
               <div class="form-group">
                 <label for="budget">Budget Range</label>
-                <select id="budget" name="budget">
+                <select id="budget">
                   <option value="">Select budget range</option>
-                <option value="under-2000">Under $2,000</option>
-                <option value="2000-5000">$2,000 - $5,000</option>
-                <option value="5000-10000">$5,000 - $10,000</option>
-                <option value="10000-plus">$10,000+</option>
-              </select>
-              </div>
-              <div class="form-group">
-                <label for="travelers">Number of Travelers</label>
-              <input type="number" id="travelers" name="travelers" min="1" placeholder="1" />
-              </div>
-              <div class="form-group full-width">
-                <label for="travelType">Type of Travel</label>
-              <select id="travelType" name="travelType">
-                <option value="">Select travel type</option>
-                <option value="destination-wedding">Destination Wedding</option>
-                <option value="luxury">Luxury Vacation</option>
-                  <option value="group">Group Travel</option>
-                  <option value="cruise">Cruise</option>
-                  <option value="family">Family Vacation</option>
-                  <option value="adventure">Adventure Travel</option>
-                  <option value="solo">Solo Travel</option>
+                  <option>Under $2,000</option>
+                  <option>$2,000 – $5,000</option>
+                  <option>$5,000 – $10,000</option>
+                  <option>$10,000+</option>
                 </select>
               </div>
-              <div class="form-group full-width">
-                <label for="message">Special Requests / Notes</label>
-                <textarea id="message" name="message" placeholder="Tell Melody about your dream trip..."></textarea>
-              </div>
+              <div class="form-group"><label for="travelers">Number of Travelers</label><input type="number" id="travelers" placeholder="How many travelers?" min="1" /></div>
             </div>
-            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            <div class="form-group">
+              <label for="travelType">Type of Travel</label>
+              <select id="travelType">
+                <option value="">Select travel type</option>
+                <option>Destination Wedding</option>
+                <option>Luxury Vacation</option>
+                <option>Group Travel</option>
+                <option>Cruise</option>
+                <option>Family Vacation</option>
+                <option>Adventure Travel</option>
+                <option>Solo Travel</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="notes">Special Requests / Notes</label><textarea id="notes" placeholder="Tell Melody anything special about your dream trip..."></textarea></div>
+            <button type="submit" class="btn-gold full"><i class="fas fa-paper-plane"></i> Send Inquiry</button>
           </form>
+          <div id="formSuccess" style="display:none;text-align:center;padding:2rem 0;"><div style="font-size:3rem;margin-bottom:1rem;">✅</div><h3 style="color:#0A1628;margin-bottom:.5rem;">Thank You!</h3><p style="color:#6b7280;">Melody will be in touch within 24 hours.</p></div>
         </div>
-
-        <div class="contact-info">
+        <div class="contact-info-card">
           <h3>Contact Information</h3>
-          <div class="contact-item" style="margin-top:24px;">
-            <span class="contact-icon">&#128222;</span>
-            <div>
-              <p><strong>Phone</strong></p>
-              <p><a href="tel:4702468349">470-246-8349</a></p>
-            </div>
+          <div class="cinfo-item"><div class="cinfo-icon"><i class="fas fa-phone"></i></div><div class="cinfo-body"><h4>Phone</h4><a href="tel:4702468349">470-246-8349</a></div></div>
+          <div class="cinfo-item"><div class="cinfo-icon"><i class="fas fa-envelope"></i></div><div class="cinfo-body"><h4>Email</h4><a href="mailto:melody@mmtravelmovement.com">melody@mmtravelmovement.com</a></div></div>
+          <div class="cinfo-item"><div class="cinfo-icon"><i class="fas fa-plane"></i></div><div class="cinfo-body"><h4>Affiliated With</h4><p>Jus Adventures</p></div></div>
+          <div class="office-hours-card">
+            <h4>Office Hours</h4>
+            <p>Monday – Friday: 9am – 6pm EST</p>
+            <p>Saturday: 10am – 4pm EST</p>
+            <p>Sunday: By appointment</p>
           </div>
-          <div class="contact-item">
-            <span class="contact-icon">&#128231;</span>
-            <div>
-              <p><strong>Email</strong></p>
-              <p><a href="mailto:melody@mmtravelmovement.com">melody@mmtravelmovement.com</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">&#9992;</span>
-            <div>
-              <p><strong>Affiliated With</strong></p>
-              <p><a href="https://www.jusadventures.com/" target="_blank" rel="noopener">Jus Adventures</a></p>
-            </div>
-          </div>
-          <div style="margin-top:32px;padding:24px;background:#F8F6F1;border-radius:12px;">
-            <h4 style="margin-bottom:12px;font-size:1.1rem;">Office Hours</h4>
-            <p style="color:#6B7280;font-size:0.9rem;">Monday &ndash; Friday: 9am &ndash; 6pm EST</p>
-            <p style="color:#6B7280;font-size:0.9rem;">Saturday: 10am &ndash; 4pm EST</p>
-            <p style="color:#6B7280;font-size:0.9rem;">Sunday: By appointment</p>
-        </div>
-        <div style="margin-top:24px;padding:24px;background:#0A1628;border-radius:12px;text-align:center;">
-          <p style="color:rgba(255,255,255,0.8);margin-bottom:16px;">Schedule a video consultation</p>
-            <a href="#" class="btn btn-primary btn-sm">Book on Calendly</a>
+          <div class="video-cta">
+            <p>Video Consultation</p>
+            <a href="https://calendly.com" target="_blank" rel="noopener" class="btn-gold full"><i class="fas fa-video"></i> Schedule on Calendly</a>
           </div>
         </div>
       </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <p class="footer-logo">MM Travel Movement</p>
-          <p class="footer-tagline">Harmoniously Booking Lifetime Memories</p>
-          <p><a href="mailto:melody@mmtravelmovement.com">melody@mmtravelmovement.com</a></p>
-          <p><a href="tel:4702468349">470-246-8349</a></p>
-          <p class="footer-affiliation">Proud Ambassador &mdash; Jus Adventures</p>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="services.html">Travel Services</a></li>
-            <li><a href="trips.html">Upcoming Trips</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="payments.html">Payments</a></li>
-            <li><a href="about.html">About Melody</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Travel Services</h4>
-          <ul>
-            <li><a href="services.html">Destination Weddings</a></li>
-            <li><a href="services.html">Luxury Travel</a></li>
-            <li><a href="group-travel.html">Group Travel</a></li>
-            <li><a href="cruises.html">Cruises</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Book Your Trip</h4>
-        <p>Ready to start planning?</p>
-          <a href="contact.html" class="btn btn-primary btn-sm">Contact Melody</a>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="Instagram">IG</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 MM Travel Movement. All rights reserved.</p>
     </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><span class="footer-logo"><span class="logo-mm">MM</span><span class="logo-tm">TM</span></span><p class="footer-tagline">Harmoniously Booking<br>Lifetime Memories</p><p class="footer-affil">Proud Jus Adventures Ambassador</p><div class="footer-social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="/">Home</a></li><li><a href="/about">About Melody</a></li><li><a href="/services">Travel Services</a></li><li><a href="/trips">Upcoming Trips</a></li><li><a href="/testimonials">Testimonials</a></li></ul></div>
+      <div class="footer-col"><h4>More</h4><ul><li><a href="/payments">Payment Center</a></li><li><a href="/contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><p class="fc-contact-line"><i class="fas fa-phone" style="color:#C9A84C;margin-top:3px;"></i> <a href="tel:4702468349">470-246-8349</a></p><p class="fc-contact-line"><i class="fas fa-envelope" style="color:#C9A84C;margin-top:3px;"></i> <a href="mailto:melody@mmtravelmovement.com">melody@mmtravelmovement.com</a></p><a href="/contact" class="footer-cta">Book a Consultation</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 MM Travel Movement. All rights reserved. | Melody Michaux, Independent Travel Advisor | Jus Adventures Ambassador</p></div>
   </footer>
-    <script src="js/main.js"></script>
-  </body>
-  </html>
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+  <script>
+    const hamburger=document.getElementById('hamburger');const navMenu=document.getElementById('nav-menu');hamburger.addEventListener('click',()=>navMenu.classList.toggle('open'));const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>10);document.getElementById('backToTop').classList.toggle('visible',window.scrollY>300);});
+    document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('formSuccess').style.display='block';});
+  </script>
+</body>
+</html>
