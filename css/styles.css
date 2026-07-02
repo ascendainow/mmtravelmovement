@@ -213,3 +213,12 @@ ul{list-style:none}
 
 /* Hide placeholder when hero photo is loaded */
 .hero-photo-placeholder{display:none}
+
+
+/* ===== HIDDEN: Payments (restorable — delete this whole block to bring back) ===== */
+a[href^="/payments"]{display:none !important;}
+.payment-box{display:none !important;}
+.meet-payment-inner{grid-template-columns:1fr 380px !important;}
+/* ===== END HIDDEN Payments ===== */
+/* ===== Brightened hero to reveal waters + ships (was opacity .18) ===== */
+.hero-bg{opacity:.7 !important;}
