@@ -3,6 +3,7 @@
 
 [build]
 publish = "."
+command = "node scripts/generate-gallery.js"
 
 # Custom 404 page
 [[redirects]]
