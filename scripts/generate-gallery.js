@@ -18,7 +18,7 @@ const CATEGORIES = [
   { slug: 'cruises', label: 'Cruises' },
   { slug: 'luxury-escapes', label: 'Luxury Escapes' },
   { slug: 'group-travel', label: 'Group Travel' },
-  { slug: 'family-trips-weddings', label: 'Family Trips &amp; Weddings' },
+  { slug: 'weddings', label: 'Weddings' },
   { slug: 'adventure', label: 'Adventure' }
 ];
 
