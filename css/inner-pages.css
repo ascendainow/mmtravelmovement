@@ -76,15 +76,16 @@ h2.section-title.light{color:#fff}
 .service-link{font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#C9A84C;display:inline-flex;align-items:center;gap:.35rem;transition:color .3s}
 .service-link:hover{color:#a8882e}
 .trips-grid-full{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.trip-card-full{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1);transition:transform .3s ease}
+.trip-card-full{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1);transition:transform .3s ease;display:flex;flex-direction:column;min-width:0}
 .trip-card-full:hover{transform:translateY(-4px)}
-.trip-img-full{height:230px;background-size:cover;background-position:center;position:relative}
+.trip-img-full{flex-shrink:0;height:230px;background-size:cover;background-position:center;position:relative}
 .trip-badge-pill{position:absolute;top:1rem;left:1rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#0A1628;background:#C9A84C;padding:.3rem .8rem;border-radius:50px}
-.trip-body-full{padding:1.75rem}
+.trip-body-full{padding:1.75rem;flex:1;display:flex;flex-direction:column}
+.trip-body-full .trip-includes-box:not(:has(~ .trip-includes-box)){margin-bottom:auto}
 .trip-body-full h3{font-family:'Playfair Display',Georgia,serif;font-size:1.45rem;color:#0A1628;margin:0 0 .6rem}
 .trip-body-full .trip-desc{font-size:.9rem;color:#6b7280;margin-bottom:1rem;line-height:1.7}
-.trip-detail{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:#6b7280;margin-bottom:.4rem}
-.trip-detail .td-i{color:#C9A84C}
+.trip-detail{position:relative;padding-left:1.6rem;font-size:.82rem;line-height:1.6;color:#6b7280;margin-bottom:.45rem;overflow-wrap:break-word}
+.trip-detail .td-i{position:absolute;left:0;top:0;width:1.1rem;text-align:center;color:#C9A84C}
 .trip-detail strong{color:#0A1628}
 .trip-detail.spots-warn strong{color:#b45309}
 .trip-detail.spots-critical strong{color:#dc2626}
